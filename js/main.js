@@ -255,7 +255,7 @@ function initTerminal() {
     ],
     projects: () => [
       '1. Atelier Online Clothes Shopping (HTML5, CSS3, JS, GCP Live Store)',
-      '2. Hindavi Tours & Travels Platform (HTML5, CSS3, JS, Flask, SQLite)',
+      '2. Hindavi Tours & Travels [LIVE]: <a href="https://hindavi-tours-travels.onrender.com/" target="_blank" class="terminal-highlight">hindavi-tours-travels.onrender.com</a>',
       '3. Sports Performance Analytics & Streamlit Dashboard (Python, Pandas)',
       '4. AI Conversational Chat Agent (Python, NLP, REST APIs)'
     ],
