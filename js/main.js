@@ -46,10 +46,11 @@ function initTypewriter() {
 
   const words = [
     'Frontend Web Developer',
+    'Data Analyst & Insights Specialist',
     'HTML5, CSS3 & JS Specialist',
-    'Next.js & React Enthusiast',
-    'Python & Backend Explorer',
-    'Clean UI/UX Craftsman'
+    'Power BI & SQL Dashboard Builder',
+    'Python & Analytics Explorer',
+    'Next.js & React Enthusiast'
   ];
 
   let wordIndex = 0;
@@ -223,6 +224,7 @@ function initTerminal() {
       '<span class="terminal-highlight">Available Commands:</span>',
       '  <span class="terminal-highlight">whoami</span>    - Brief intro about Kamlesh Bargal',
       '  <span class="terminal-highlight">skills</span>    - List core technical proficiencies',
+      '  <span class="terminal-highlight">analytics</span> - View Data Analytics & BI tools (Power BI, SQL, Pandas)',
       '  <span class="terminal-highlight">projects</span>  - Overview of featured projects',
       '  <span class="terminal-highlight">education</span> - Educational credentials & degree',
       '  <span class="terminal-highlight">contact</span>   - Contact email, phone, location',
@@ -232,15 +234,24 @@ function initTerminal() {
       '  <span class="terminal-highlight">date</span>      - Show current date & timestamp'
     ],
     whoami: () => [
-      'Kamlesh Bargal | Frontend Web Developer & Computer Science Engineer (B.Tech).',
-      'Experienced in building responsive websites, full-stack e-commerce applications, and Python data pipelines.',
+      'Kamlesh Bargal | Frontend Web Developer & Data Analyst (B.Tech CSE).',
+      'Experienced in building responsive websites, full-stack e-commerce applications, and data analytics pipelines (Power BI, SQL, Pandas).',
       'Based in Pune, India 🇮🇳.'
     ],
     skills: () => [
       '• Core Web: HTML5, CSS3, JavaScript (ES6+), Responsive UI',
+      '• Data Analytics: Power BI, SQL, Python (Pandas/NumPy), Advanced Excel, EDA',
       '• Frameworks & Tools: Next.js, React, Angular basics, Python, REST APIs',
       '• Databases: MySQL, PostgreSQL, SQLite',
       '• Cloud & Ops: Google Cloud Platform (GCP), Git, GitHub, Linux, VS Code'
+    ],
+    analytics: () => [
+      '📊 <span class="terminal-highlight">Data Analytics & Business Intelligence Toolkit:</span>',
+      '  • Power BI: Interactive KPI dashboards, DAX formulas, trend reports (Kiran Academy)',
+      '  • SQL: Complex queries, joins, window functions, and data transformations',
+      '  • Python Pandas & NumPy: Data cleaning, wrangling, sports analytics dashboard',
+      '  • Advanced Excel: Pivot tables, VLOOKUP, statistical summaries, data auditing',
+      '  • Exploratory Data Analysis: Trend forecasting, anomaly detection, business insights'
     ],
     projects: () => [
       '1. Atelier Online Clothes Shopping (HTML5, CSS3, JS, GCP Live Store)',
