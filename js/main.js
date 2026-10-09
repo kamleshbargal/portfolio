@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initTheme();
   initTypewriter();
   initNavbar();
+  initPageRouting();
   initSkillsFilter();
   initModals();
   initTerminal();
@@ -88,39 +89,95 @@ function initTypewriter() {
 }
 
 /* ==========================================================================
-   3. Navbar Scroll & Mobile Menu Navigation
+   3. Zero-Scroll Page Switching Engine
    ========================================================================== */
+function switchPage(pageName) {
+  const pageViews = document.querySelectorAll('.page-view');
+  if (pageViews.length === 0) return;
+
+  // Normalize page name
+  if (!pageName || pageName === 'index.html' || pageName === '/') {
+    pageName = 'home';
+  }
+
+  const targetView = document.getElementById(`page-${pageName}`);
+  if (!targetView) {
+    pageName = 'home';
+  }
+
+  // Hide all other pages
+  pageViews.forEach(view => {
+    view.classList.remove('active');
+  });
+
+  // Activate only the selected page
+  const activeView = document.getElementById(`page-${pageName}`) || document.getElementById('page-home');
+  if (activeView) {
+    activeView.classList.add('active');
+  }
+
+  // Update navbar links active state
+  document.querySelectorAll('[data-page]').forEach(link => {
+    if (link.getAttribute('data-page') === pageName) {
+      link.classList.add('active');
+    } else {
+      link.classList.remove('active');
+    }
+  });
+
+  // Zero-scroll: Always set position immediately to top
+  window.scrollTo({ top: 0, behavior: 'instant' });
+
+  // Update URL hash without scrolling
+  if (window.location.hash !== `#${pageName}`) {
+    history.replaceState(null, null, `#${pageName}`);
+  }
+}
+
+function initPageRouting() {
+  // Listen for clicks on any link or button with data-page attribute
+  document.addEventListener('click', (e) => {
+    const pageTrigger = e.target.closest('[data-page]');
+    if (pageTrigger) {
+      e.preventDefault();
+      const targetPage = pageTrigger.getAttribute('data-page');
+      switchPage(targetPage);
+
+      // Close mobile menu if open
+      const navMenu = document.getElementById('navMenu');
+      const mobileToggle = document.getElementById('mobileToggle');
+      if (navMenu && mobileToggle) {
+        navMenu.classList.remove('open');
+        mobileToggle.classList.remove('active');
+      }
+    }
+  });
+
+  // Handle URL hash on load or hash change
+  function handleHash() {
+    const hash = window.location.hash.replace('#', '').trim();
+    if (hash) {
+      switchPage(hash);
+    } else {
+      switchPage('home');
+    }
+  }
+
+  window.addEventListener('hashchange', handleHash);
+  handleHash();
+}
+
 function initNavbar() {
   const navbar = document.getElementById('navbar');
   const mobileToggle = document.getElementById('mobileToggle');
   const navMenu = document.getElementById('navMenu');
-  const navLinks = document.querySelectorAll('.nav-link');
-  const sections = document.querySelectorAll('section[id]');
 
-  // Scroll effect
+  // Scroll effect on header
   window.addEventListener('scroll', () => {
-    if (window.scrollY > 40) {
+    if (window.scrollY > 30) {
       navbar.classList.add('scrolled');
     } else {
       navbar.classList.remove('scrolled');
-    }
-
-    // Active page link based on current file name
-    const currentPath = window.location.pathname.split('/').pop() || 'index.html';
-    navLinks.forEach(link => {
-      const href = link.getAttribute('href');
-      if (href === currentPath || (currentPath === '' && href === 'index.html')) {
-        link.classList.add('active');
-      }
-    });
-  });
-
-  // Initial active link check on page load
-  const currentPath = window.location.pathname.split('/').pop() || 'index.html';
-  navLinks.forEach(link => {
-    const href = link.getAttribute('href');
-    if (href === currentPath || (currentPath === '' && href === 'index.html')) {
-      link.classList.add('active');
     }
   });
 
@@ -129,14 +186,6 @@ function initNavbar() {
     mobileToggle.addEventListener('click', () => {
       navMenu.classList.toggle('open');
       mobileToggle.classList.toggle('active');
-    });
-
-    // Close menu when a link is clicked
-    navLinks.forEach(link => {
-      link.addEventListener('click', () => {
-        navMenu.classList.remove('open');
-        mobileToggle.classList.remove('active');
-      });
     });
   }
 }
