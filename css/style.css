@@ -191,6 +191,13 @@ p {
   position: relative;
 }
 
+.page-section {
+  padding-top: 8rem;
+  padding-bottom: 5.5rem;
+  min-height: calc(100vh - 140px);
+  position: relative;
+}
+
 .section-header {
   text-align: center;
   max-width: 680px;

@@ -105,24 +105,23 @@ function initNavbar() {
       navbar.classList.remove('scrolled');
     }
 
-    // Active link highlighting
-    let currentSectionId = '';
-    const scrollPosition = window.scrollY + 120;
-
-    sections.forEach(section => {
-      const top = section.offsetTop;
-      const height = section.offsetHeight;
-      if (scrollPosition >= top && scrollPosition < top + height) {
-        currentSectionId = section.getAttribute('id');
-      }
-    });
-
+    // Active page link based on current file name
+    const currentPath = window.location.pathname.split('/').pop() || 'index.html';
     navLinks.forEach(link => {
-      link.classList.remove('active');
-      if (link.getAttribute('href') === `#${currentSectionId}`) {
+      const href = link.getAttribute('href');
+      if (href === currentPath || (currentPath === '' && href === 'index.html')) {
         link.classList.add('active');
       }
     });
+  });
+
+  // Initial active link check on page load
+  const currentPath = window.location.pathname.split('/').pop() || 'index.html';
+  navLinks.forEach(link => {
+    const href = link.getAttribute('href');
+    if (href === currentPath || (currentPath === '' && href === 'index.html')) {
+      link.classList.add('active');
+    }
   });
 
   // Mobile menu toggle

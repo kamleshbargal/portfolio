@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Technical Skills | Kamlesh Bargal</title>
+  <meta name="description" content="Explore technical proficiencies of Kamlesh Bargal across Frontend Development, Data Analytics, Python, SQL, Power BI, and Cloud Tools.">
+  <meta name="author" content="Kamlesh Bargal">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='25' fill='%2306b6d4'/><text x='50%' y='62%' font-size='50' font-weight='900' fill='%23ffffff' text-anchor='middle' font-family='system-ui'>KB</text></svg>">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Ambient Background Glows & Grid Canvas -->
+  <div class="bg-glow bg-glow-1"></div>
+  <div class="bg-glow bg-glow-2"></div>
+  <div class="bg-glow bg-glow-3"></div>
+  <div class="bg-grid-overlay"></div>
+
+  <!-- Header / Navigation Bar -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="nav-brand">
+        <span class="brand-badge">KB</span>
+        <span class="brand-text">Kamlesh<span class="brand-highlight">.dev</span></span>
+      </a>
+
+      <nav class="nav-menu" id="navMenu">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="skills.html" class="nav-link active">Skills</a></li>
+          <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Theme Toggle Button -->
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark/light theme" title="Toggle Theme">
+          <i class="fa-solid fa-moon moon-icon"></i>
+          <i class="fa-solid fa-sun sun-icon"></i>
+        </button>
+
+        <!-- Resume Download CTA in Navbar -->
+        <a href="assets/docs/Kamlesh_Bargal_Resume.pdf" download="Kamlesh_Bargal_Resume.pdf" class="btn btn-sm btn-outline nav-cta-resume" target="_blank">
+          <i class="fa-solid fa-file-arrow-down"></i>
+          <span>Resume</span>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Open navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Skills Section -->
+    <section class="page-section skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-screwdriver-wrench"></i> Expertise</span>
+          <h1 class="section-title">Technical <span class="gradient-text">Skills</span></h1>
+          <p class="section-subtitle">A collection of tools, languages, and technologies I use to build modern solutions.</p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="filter-group">
+          <button class="filter-btn active" data-category="all">All Skills</button>
+          <button class="filter-btn" data-category="frontend">Frontend</button>
+          <button class="filter-btn" data-category="analytics">Data Analytics</button>
+          <button class="filter-btn" data-category="backend">Backend &amp; Languages</button>
+          <button class="filter-btn" data-category="tools">Tools &amp; Cloud</button>
+        </div>
+
+        <div class="skills-grid" id="skillsGrid">
+          <!-- 1. HTML5 -->
+          <div class="skill-card" data-category="frontend">
+            <div class="skill-icon"><i class="fa-brands fa-html5" style="color: #e34f26;"></i></div>
+            <div class="skill-info">
+              <div class="skill-header">
+                <span class="skill-name">HTML5</span>
+                <span class="skill-level">Advanced</span>
+              </div>
+              <p class="skill-desc">Semantic structure, SEO optimization, Accessibility (a11y), clean web architecture.</p>
+              <div class="skill-bar"><div class="skill-fill" style="width: 95%;"></div></div>
+            </div>
+          </div>
+
+          <!-- 2. CSS3 -->
+          <div class="skill-card" data-category="frontend">
+            <div class="skill-icon"><i class="fa-brands fa-css3-alt" style="color: #264de4;"></i></div>
+            <div class="skill-info">
+              <div class="skill-header">
+                <span class="skill-name">CSS3 &amp; Responsive Design</span>
+                <span class="skill-level">Advanced</span>
+              </div>
+              <p class="skill-desc">Flexbox, CSS Grid, media queries, animations, glassmorphism, mobile-first design.</p>
+              <div class="skill-bar"><div class="skill-fill" style="width: 92%;"></div></div>
+            </div>
+          </div>
+
+          <!-- 3. JavaScript -->
+          <div class="skill-card" data-category="frontend">
+            <div class="skill-icon"><i class="fa-brands fa-js" style="color: #f7df1e;"></i></div>
+            <div class="skill-info">
+              <div class="skill-header">
+                <span class="skill-name">JavaScript (ES6+)</span>
+                <span class="skill-level">Proficient</span>
+              </div>
+              <p class="skill-desc">DOM manipulation, async/await, fetch API, modular code, event handling, cart logic.</p>
+              <div class="skill-bar"><div class="skill-fill" style="width: 88%;"></div></div>
+            </div>
+          </div>
+
+          <!-- 4. Next.js / React -->
+          <div class="skill-card" data-category="frontend">
+            <div class="skill-icon"><i class="fa-brands fa-react" style="color: #61dafb;"></i></div>
+            <div class="skill-info">
+              <div class="skill-header">
+                <span class="skill-name">Next.js &amp; React</span>
+                <span class="skill-level">Growing</span>
+              </div>
+              <p class="skill-desc">Component-driven architecture, Server/Client components, dynamic routing, state management.</p>
+              <div class="skill-bar"><div class="skill-fill" style="width: 80%;"></div></div>
+            </div>
+          </div>
+
+          <!-- 5. Power BI -->
+          <div class="skill-card" data-category="analytics">
+            <div class="skill-icon"><i class="fa-solid fa-chart-column" style="color: #f59e0b;"></i></div>
+            <div class="skill-info">
+              <div class="skill-header">
+                <span class="skill-name">Power BI &amp; Dashboard Design</span>
+                <span class="skill-level">Proficient</span>
+              </div>
+              <p class="skill-desc">Interactive KPI dashboards, DAX formulas, trend reports, and business intelligence tracking (Kiran Academy).</p>
+              <div class="skill-bar"><div class="skill-fill" style="width: 88%;"></div></div>
+            </div>
+          </div>
+
+          <!-- 6. Python Pandas & NumPy -->
+          <div class="skill-card" data-category="analytics">
+            <div class="skill-icon"><i class="fa-solid fa-chart-pie" style="color: #38bdf8;"></i></div>
+            <div class="skill-info">
+              <div class="skill-header">
+                <span class="skill-name">Python (Pandas &amp; NumPy)</span>
+                <span class="skill-level">Proficient</span>
+              </div>
+              <p class="skill-desc">Data wrangling, cleaning missing values, DataFrame filtering, statistical grouping, automated aggregation.</p>
+              <div class="skill-bar"><div class="skill-fill" style="width: 86%;"></div></div>
+            </div>
+          </div>
+
+          <!-- 7. SQL Analytics -->
+          <div class="skill-card" data-category="analytics">
+            <div class="skill-icon"><i class="fa-solid fa-database" style="color: #06b6d4;"></i></div>
+            <div class="skill-info">
+              <div class="skill-header">
+                <span class="skill-name">SQL Querying &amp; Data Transformation</span>
+                <span class="skill-level">Proficient</span>
+              </div>
+              <p class="skill-desc">Complex joins, aggregate functions, subqueries, group by, data filtering, and warehouse querying.</p>
+              <div class="skill-bar"><div class="skill-fill" style="width: 88%;"></div></div>
+            </div>
+          </div>
+
+          <!-- 8. Advanced Excel -->
+          <div class="skill-card" data-category="analytics">
+            <div class="skill-icon"><i class="fa-solid fa-file-excel" style="color: #10b981;"></i></div>
+            <div class="skill-info">
+              <div class="skill-header">
+                <span class="skill-name">Advanced Excel &amp; Data Cleaning</span>
+                <span class="skill-level">Advanced</span>
+              </div>
+              <p class="skill-desc">Pivot tables, VLOOKUP/XLOOKUP, conditional formulas, trend lines, and structured data validation.</p>
+              <div class="skill-bar"><div class="skill-fill" style="width: 90%;"></div></div>
+            </div>
+          </div>
+
+          <!-- 9. Exploratory Data Analysis -->
+          <div class="skill-card" data-category="analytics">
+            <div class="skill-icon"><i class="fa-solid fa-chart-line" style="color: #ec4899;"></i></div>
+            <div class="skill-info">
+              <div class="skill-header">
+                <span class="skill-name">Exploratory Data Analysis (EDA)</span>
+                <span class="skill-level">Proficient</span>
+              </div>
+              <p class="skill-desc">Identifying correlations, patterns, outlier detection, data visualization distributions, and KPI summaries.</p>
+              <div class="skill-bar"><div class="skill-fill" style="width: 84%;"></div></div>
+            </div>
+          </div>
+
+          <!-- 10. Python Backend -->
+          <div class="skill-card" data-category="backend">
+            <div class="skill-icon"><i class="fa-brands fa-python" style="color: #3776ab;"></i></div>
+            <div class="skill-info">
+              <div class="skill-header">
+                <span class="skill-name">Python (Backend &amp; Scripting)</span>
+                <span class="skill-level">Proficient</span>
+              </div>
+              <p class="skill-desc">Backend development with Flask, NLP chatbots, automation scripts, and Streamlit dashboards.</p>
+              <div class="skill-bar"><div class="skill-fill" style="width: 85%;"></div></div>
+            </div>
+          </div>
+
+          <!-- 11. REST APIs -->
+          <div class="skill-card" data-category="backend">
+            <div class="skill-icon"><i class="fa-solid fa-network-wired" style="color: #10b981;"></i></div>
+            <div class="skill-info">
+              <div class="skill-header">
+                <span class="skill-name">RESTful APIs</span>
+                <span class="skill-level">Proficient</span>
+              </div>
+              <p class="skill-desc">API endpoints, JSON data exchange, client-server communication, authentication flows.</p>
+              <div class="skill-bar"><div class="skill-fill" style="width: 85%;"></div></div>
+            </div>
+          </div>
+
+          <!-- 12. SQL & Databases -->
+          <div class="skill-card" data-category="backend">
+            <div class="skill-icon"><i class="fa-solid fa-server" style="color: #f29111;"></i></div>
+            <div class="skill-info">
+              <div class="skill-header">
+                <span class="skill-name">Databases (MySQL, PostgreSQL, SQLite)</span>
+                <span class="skill-level">Proficient</span>
+              </div>
+              <p class="skill-desc">Schema design, relational queries, joins, data filtering, database integrity.</p>
+              <div class="skill-bar"><div class="skill-fill" style="width: 80%;"></div></div>
+            </div>
+          </div>
+
+          <!-- 13. Render Cloud -->
+          <div class="skill-card" data-category="tools">
+            <div class="skill-icon"><i class="fa-solid fa-cloud" style="color: #46e3b7;"></i></div>
+            <div class="skill-info">
+              <div class="skill-header">
+                <span class="skill-name">Render &amp; Live Web Hosting</span>
+                <span class="skill-level">Proficient</span>
+              </div>
+              <p class="skill-desc">Production deployment of full-stack Flask and Python apps with live custom domains.</p>
+              <div class="skill-bar"><div class="skill-fill" style="width: 85%;"></div></div>
+            </div>
+          </div>
+
+          <!-- 14. Google Cloud Platform -->
+          <div class="skill-card" data-category="tools">
+            <div class="skill-icon"><i class="fa-brands fa-google" style="color: #4285f4;"></i></div>
+            <div class="skill-info">
+              <div class="skill-header">
+                <span class="skill-name">Google Cloud Platform (GCP)</span>
+                <span class="skill-level">Intermediate</span>
+              </div>
+              <p class="skill-desc">Cloud VM hosting, firewall configuration, live domain deployment, static asset serving.</p>
+              <div class="skill-bar"><div class="skill-fill" style="width: 78%;"></div></div>
+            </div>
+          </div>
+
+          <!-- 15. Git & GitHub -->
+          <div class="skill-card" data-category="tools">
+            <div class="skill-icon"><i class="fa-brands fa-github" style="color: #a855f7;"></i></div>
+            <div class="skill-info">
+              <div class="skill-header">
+                <span class="skill-name">Git &amp; GitHub</span>
+                <span class="skill-level">Advanced</span>
+              </div>
+              <p class="skill-desc">Version control, branching, repository management, collaborative workflows, CI/CD basics.</p>
+              <div class="skill-bar"><div class="skill-fill" style="width: 90%;"></div></div>
+            </div>
+          </div>
+
+          <!-- 16. VS Code & Linux -->
+          <div class="skill-card" data-category="tools">
+            <div class="skill-icon"><i class="fa-solid fa-terminal" style="color: #06b6d4;"></i></div>
+            <div class="skill-info">
+              <div class="skill-header">
+                <span class="skill-name">VS Code &amp; Linux CLI</span>
+                <span class="skill-level">Proficient</span>
+              </div>
+              <p class="skill-desc">PowerShell, bash scripts, debugging tools, extensions, local development environments.</p>
+              <div class="skill-bar"><div class="skill-fill" style="width: 85%;"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Next Action CTA -->
+        <div style="text-align: center; margin-top: 4rem;">
+          <a href="projects.html" class="btn btn-primary">
+            <span>View Featured Projects</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <a href="index.html" class="nav-brand">
+          <span class="brand-badge">KB</span>
+          <span class="brand-text">Kamlesh<span class="brand-highlight">.dev</span></span>
+        </a>
+        <p class="footer-tagline">Designing &amp; building modern web experiences with clean code.</p>
+      </div>
+
+      <div class="footer-center">
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="skills.html">Skills</a>
+          <a href="projects.html">Projects</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+
+      <div class="footer-right">
+        <div class="footer-socials">
+          <a href="mailto:kamleshbargal28@gmail.com" title="Email"><i class="fa-solid fa-envelope"></i></a>
+          <a href="https://wa.me/919209962961" target="_blank" rel="noopener noreferrer" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="https://github.com/kamleshbargal" target="_blank" rel="noopener noreferrer" title="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+        <p class="copyright">© 2026 Kamlesh Bargal. Built with HTML5, CSS3 &amp; JS.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <a href="#navbar" class="back-to-top" id="backToTop" aria-label="Back to top of page">
+    <i class="fa-solid fa-chevron-up"></i>
+  </a>
+
+  <!-- Main JavaScript File -->
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Featured Projects | Kamlesh Bargal</title>
+  <meta name="description" content="Explore web applications and data analytics projects built by Kamlesh Bargal, including Hindavi Tours & Travels (Live on Render) and Atelier E-Commerce.">
+  <meta name="author" content="Kamlesh Bargal">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='25' fill='%2306b6d4'/><text x='50%' y='62%' font-size='50' font-weight='900' fill='%23ffffff' text-anchor='middle' font-family='system-ui'>KB</text></svg>">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Ambient Background Glows & Grid Canvas -->
+  <div class="bg-glow bg-glow-1"></div>
+  <div class="bg-glow bg-glow-2"></div>
+  <div class="bg-glow bg-glow-3"></div>
+  <div class="bg-grid-overlay"></div>
+
+  <!-- Header / Navigation Bar -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="nav-brand">
+        <span class="brand-badge">KB</span>
+        <span class="brand-text">Kamlesh<span class="brand-highlight">.dev</span></span>
+      </a>
+
+      <nav class="nav-menu" id="navMenu">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="skills.html" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="projects.html" class="nav-link active">Projects</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Theme Toggle Button -->
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark/light theme" title="Toggle Theme">
+          <i class="fa-solid fa-moon moon-icon"></i>
+          <i class="fa-solid fa-sun sun-icon"></i>
+        </button>
+
+        <!-- Resume Download CTA in Navbar -->
+        <a href="assets/docs/Kamlesh_Bargal_Resume.pdf" download="Kamlesh_Bargal_Resume.pdf" class="btn btn-sm btn-outline nav-cta-resume" target="_blank">
+          <i class="fa-solid fa-file-arrow-down"></i>
+          <span>Resume</span>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Open navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Projects Section -->
+    <section class="page-section projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-laptop-code"></i> Portfolio</span>
+          <h1 class="section-title">Featured <span class="gradient-text">Projects</span></h1>
+          <p class="section-subtitle">Real-world applications built with modern web technologies, live cloud deployments, and clean code.</p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: Tours & Travels (LIVE DEMO READY) -->
+          <article class="project-card">
+            <div class="project-image-wrap">
+              <img src="assets/images/project-travel.jpg" alt="Hindavi Tours & Travels Platform" class="project-img" onerror="this.src='https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=800&q=80'">
+              <div class="project-badge">Live on Render • Full-Stack</div>
+            </div>
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Python Flask</span>
+                <span class="tech-tag">SQLite</span>
+                <span class="tech-tag">Render</span>
+              </div>
+              <h3 class="project-title">Hindavi Tours &amp; Travels Web Platform</h3>
+              <p class="project-desc">
+                A live, production travel booking web application designed for exploring tour packages and vehicle rentals across Western India. Features custom destination showcases, vehicle fleet specs, customer inquiries, and persistent database management.
+              </p>
+              <div class="project-features">
+                <span><i class="fa-solid fa-check"></i> Live running web application deployed on Render cloud</span>
+                <span><i class="fa-solid fa-check"></i> Interactive package exploration &amp; vehicle fleet showcase</span>
+                <span><i class="fa-solid fa-check"></i> Customer inquiry pipeline with SQLite &amp; Python Flask backend</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://hindavi-tours-travels.onrender.com/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                </a>
+                <a href="https://github.com/kamleshbargal/Hindavi-tours-Travels" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                  <i class="fa-brands fa-github"></i> Repository
+                </a>
+                <button class="btn btn-sm btn-ghost open-modal-btn" data-modal="modal-travel">
+                  <i class="fa-solid fa-circle-info"></i> Details
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Atelier Clothes Shopping Website -->
+          <article class="project-card">
+            <div class="project-image-wrap">
+              <img src="assets/images/project-ecommerce.png" alt="Atelier Online Clothes Shopping Website" class="project-img" onerror="this.src='https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=800&q=80'">
+              <div class="project-badge">Featured • Live on GCP</div>
+            </div>
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">GCP</span>
+                <span class="tech-tag">E-Commerce</span>
+              </div>
+              <h3 class="project-title">Atelier - Online Clothes Shopping Platform</h3>
+              <p class="project-desc">
+                A fully responsive e-commerce fashion storefront engineered with semantic HTML5, custom CSS3, and JavaScript. Features interactive product catalogs, real-time cart calculations, complete checkout flow, order tracking, and admin dashboard, deployed on Google Cloud Platform.
+              </p>
+              <div class="project-features">
+                <span><i class="fa-solid fa-check"></i> Dynamic shopping cart with live subtotal calculations</span>
+                <span><i class="fa-solid fa-check"></i> End-to-end checkout flow &amp; order tracking portal</span>
+                <span><i class="fa-solid fa-check"></i> Public cloud deployment on Google Cloud Platform (GCP)</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/kamleshbargal/clothes-website-Atelier-" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                  <i class="fa-brands fa-github"></i> Repository
+                </a>
+                <button class="btn btn-sm btn-primary open-modal-btn" data-modal="modal-ecommerce">
+                  <i class="fa-solid fa-circle-info"></i> View Details
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Sports Analytics Dashboard -->
+          <article class="project-card">
+            <div class="project-image-wrap">
+              <img src="assets/images/project-analytics.png" alt="Python Sports Analytics & Dashboard" class="project-img" onerror="this.src='https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80'">
+              <div class="project-badge">Data Science &amp; Python</div>
+            </div>
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Streamlit</span>
+                <span class="tech-tag">Pandas</span>
+                <span class="tech-tag">Data Analytics</span>
+              </div>
+              <h3 class="project-title">Sports Performance Analytics &amp; Visualizer</h3>
+              <p class="project-desc">
+                An interactive sports intelligence dashboard engineered with Python, Streamlit, and Pandas. Parses datasets covering match performance, captaincy records, and tournament statistics with live interactive metric filtering.
+              </p>
+              <div class="project-features">
+                <span><i class="fa-solid fa-check"></i> Multi-dimensional statistical analysis &amp; KPI trends</span>
+                <span><i class="fa-solid fa-check"></i> Clean interactive data filters and high-resolution charts</span>
+                <span><i class="fa-solid fa-check"></i> Automated data preprocessing pipelines in Python</span>
+              </div>
+              <div class="project-actions">
+                <button class="btn btn-sm btn-primary open-modal-btn" data-modal="modal-analytics">
+                  <i class="fa-solid fa-circle-info"></i> View Details
+                </button>
+                <a href="contact.html" class="btn btn-sm btn-outline">
+                  <i class="fa-solid fa-chart-line"></i> Discuss Metrics
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: AI Conversational Agent -->
+          <article class="project-card">
+            <div class="project-image-wrap">
+              <img src="https://images.unsplash.com/photo-1677442136019-21780efad99a?auto=format&fit=crop&w=800&q=80" alt="AI Conversational Agent" class="project-img">
+              <div class="project-badge">Academic Capstone • B.Tech</div>
+            </div>
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">NLP</span>
+                <span class="tech-tag">APIs</span>
+                <span class="tech-tag">Artificial Intelligence</span>
+              </div>
+              <h3 class="project-title">AI Conversational Chat Agent</h3>
+              <p class="project-desc">
+                An intelligent conversational system capable of interpreting natural language user queries and generating context-aware replies. Built using Python, NLP libraries, and API integrations with extensive query accuracy testing.
+              </p>
+              <div class="project-features">
+                <span><i class="fa-solid fa-check"></i> Natural Language Processing intent recognition</span>
+                <span><i class="fa-solid fa-check"></i> API-driven query resolution and dynamic responses</span>
+                <span><i class="fa-solid fa-check"></i> B.Tech CSE Final Year Capstone Project</span>
+              </div>
+              <div class="project-actions">
+                <button class="btn btn-sm btn-primary open-modal-btn" data-modal="modal-ai">
+                  <i class="fa-solid fa-circle-info"></i> View Details
+                </button>
+                <a href="contact.html" class="btn btn-sm btn-outline">
+                  <i class="fa-solid fa-comment-dots"></i> Learn More
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Next Action CTA -->
+        <div style="text-align: center; margin-top: 4rem;">
+          <a href="contact.html" class="btn btn-primary">
+            <span>Let's Discuss a Project</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Project Modals -->
+  <!-- Modal 1: Tours & Travels -->
+  <div class="modal" id="modal-travel">
+    <div class="modal-overlay"></div>
+    <div class="modal-card">
+      <button class="modal-close-btn" aria-label="Close modal">&times;</button>
+      <div class="modal-header">
+        <span class="modal-tag">Full-Stack Application • Live Deployed</span>
+        <h2>Hindavi Tours &amp; Travels Platform</h2>
+        <div class="project-tags">
+          <span class="tech-tag">HTML5</span>
+          <span class="tech-tag">CSS3</span>
+          <span class="tech-tag">JavaScript</span>
+          <span class="tech-tag">Python Flask</span>
+          <span class="tech-tag">SQLite</span>
+          <span class="tech-tag">Render</span>
+        </div>
+      </div>
+      <div class="modal-body">
+        <img src="assets/images/project-travel.jpg" alt="Hindavi Tours & Travels" class="modal-img" onerror="this.src='https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=800&q=80'">
+        
+        <h4>Project Overview</h4>
+        <p>
+          A customer-focused web application for booking tour packages and vehicle rentals across Western India. Features custom destination showcases, package details, fleet specs, and customer inquiries with persistent database storage. Hosted live on Render cloud.
+        </p>
+
+        <h4>Key Features:</h4>
+        <ul class="modal-bullet-list">
+          <li><strong>Live Production Deployment:</strong> Available globally at <a href="https://hindavi-tours-travels.onrender.com/" target="_blank" style="color:var(--accent-cyan);">hindavi-tours-travels.onrender.com</a>.</li>
+          <li><strong>Dynamic Package Explorer:</strong> Highlighting popular tourist packages with itinerary details, pricing, and photo galleries.</li>
+          <li><strong>Fleet Management Showcase:</strong> Detailed specifications and booking inquiries for diverse rental vehicles.</li>
+          <li><strong>Inquiry &amp; Booking Pipeline:</strong> Integrated with SQLite and Python Flask backend for storing customer requests.</li>
+          <li><strong>Interactive UX:</strong> Custom animations, testimonials, sticky navigation, and fast mobile response.</li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <a href="https://hindavi-tours-travels.onrender.com/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+          <i class="fa-solid fa-arrow-up-right-from-square"></i> Open Live Website
+        </a>
+        <a href="https://github.com/kamleshbargal/Hindavi-tours-Travels" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+          <i class="fa-brands fa-github"></i> GitHub Repo
+        </a>
+        <button class="btn btn-secondary modal-close-btn-bottom">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2: Clothes Website -->
+  <div class="modal" id="modal-ecommerce">
+    <div class="modal-overlay"></div>
+    <div class="modal-card">
+      <button class="modal-close-btn" aria-label="Close modal">&times;</button>
+      <div class="modal-header">
+        <span class="modal-tag">Featured Full-Stack Project</span>
+        <h2>Atelier - Online Clothes Shopping Website</h2>
+        <div class="project-tags">
+          <span class="tech-tag">HTML5</span>
+          <span class="tech-tag">CSS3</span>
+          <span class="tech-tag">JavaScript</span>
+          <span class="tech-tag">GCP</span>
+          <span class="tech-tag">Admin Portal</span>
+        </div>
+      </div>
+      <div class="modal-body">
+        <img src="assets/images/project-ecommerce.png" alt="Atelier E-Commerce" class="modal-img" onerror="this.src='https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=800&q=80'">
+        
+        <h4>Project Overview</h4>
+        <p>
+          Atelier is a full-featured e-commerce fashion storefront crafted to deliver a modern, luxury shopping experience. Designed from the ground up with semantic HTML5 and responsive CSS3, it offers fluid navigation across desktop, tablets, and smartphones.
+        </p>
+
+        <h4>Key Features &amp; Technical Implementation:</h4>
+        <ul class="modal-bullet-list">
+          <li><strong>Product Catalog:</strong> Dynamic item showcase with high-definition imagery, category filters, and detailed view modals.</li>
+          <li><strong>Interactive Cart System:</strong> Real-time JavaScript cart managing item quantities, pricing totals, and local storage state.</li>
+          <li><strong>Complete Checkout Flow:</strong> Step-by-step user checkout from address input to order confirmation and order tracking.</li>
+          <li><strong>Admin Dashboard:</strong> Separate secure admin section for catalog overview, product modifications, and order status updates.</li>
+          <li><strong>Cloud Deployment:</strong> Hosted publicly on Google Cloud Platform (GCP) with firewall and server security configurations.</li>
+        </ul>
+
+        <h4>Tech Stack:</h4>
+        <p>HTML5, CSS3, JavaScript ES6+, Python Backend, Google Cloud Platform, Git/GitHub.</p>
+      </div>
+      <div class="modal-footer">
+        <a href="https://github.com/kamleshbargal/clothes-website-Atelier-" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+          <i class="fa-brands fa-github"></i> View GitHub Repo
+        </a>
+        <button class="btn btn-secondary modal-close-btn-bottom">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3: Analytics Dashboard -->
+  <div class="modal" id="modal-analytics">
+    <div class="modal-overlay"></div>
+    <div class="modal-card">
+      <button class="modal-close-btn" aria-label="Close modal">&times;</button>
+      <div class="modal-header">
+        <span class="modal-tag">Data Engineering &amp; Analytics</span>
+        <h2>Sports Performance Analytics &amp; Visualizer</h2>
+        <div class="project-tags">
+          <span class="tech-tag">Python</span>
+          <span class="tech-tag">Streamlit</span>
+          <span class="tech-tag">Pandas</span>
+          <span class="tech-tag">Excel / CSV</span>
+        </div>
+      </div>
+      <div class="modal-body">
+        <img src="assets/images/project-analytics.png" alt="Sports Analytics" class="modal-img" onerror="this.src='https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80'">
+        
+        <h4>Project Overview</h4>
+        <p>
+          An interactive analytics dashboard built using Python and Streamlit to analyze sports datasets (cricket captaincy and batting statistics). Provides deep drill-down analytics, match-by-match breakdowns, and graphical comparisons.
+        </p>
+
+        <h4>Key Features:</h4>
+        <ul class="modal-bullet-list">
+          <li><strong>Automated Data Cleaning:</strong> Handled missing values, formatted timestamps, and aggregated statistics using Pandas.</li>
+          <li><strong>Visual Metrics:</strong> Interactive charts, win percentages, strike-rate distribution, and career milestone trackers.</li>
+          <li><strong>Real-time Filtering:</strong> Select specific formats (IPL, International, T20) and seasons dynamically.</li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary modal-close-btn-bottom">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 4: AI Chat Agent -->
+  <div class="modal" id="modal-ai">
+    <div class="modal-overlay"></div>
+    <div class="modal-card">
+      <button class="modal-close-btn" aria-label="Close modal">&times;</button>
+      <div class="modal-header">
+        <span class="modal-tag">Capstone Project • B.Tech</span>
+        <h2>AI Conversational Chat Agent</h2>
+        <div class="project-tags">
+          <span class="tech-tag">Python</span>
+          <span class="tech-tag">NLP</span>
+          <span class="tech-tag">API Integration</span>
+        </div>
+      </div>
+      <div class="modal-body">
+        <h4>Project Overview</h4>
+        <p>
+          A final-year engineering capstone project utilizing Python and Natural Language Processing (NLP) to build an intelligent conversational bot capable of answering complex inquiries with high semantic accuracy.
+        </p>
+
+        <h4>Key Highlights:</h4>
+        <ul class="modal-bullet-list">
+          <li>Text preprocessing, tokenization, and intent classification pipelines in Python.</li>
+          <li>Integrated REST APIs to retrieve contextual answers and generate relevant responses in real-time.</li>
+          <li>Evaluated with diverse question sets to refine response reliability and minimize latency.</li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary modal-close-btn-bottom">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <a href="index.html" class="nav-brand">
+          <span class="brand-badge">KB</span>
+          <span class="brand-text">Kamlesh<span class="brand-highlight">.dev</span></span>
+        </a>
+        <p class="footer-tagline">Designing &amp; building modern web experiences with clean code.</p>
+      </div>
+
+      <div class="footer-center">
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="skills.html">Skills</a>
+          <a href="projects.html">Projects</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+
+      <div class="footer-right">
+        <div class="footer-socials">
+          <a href="mailto:kamleshbargal28@gmail.com" title="Email"><i class="fa-solid fa-envelope"></i></a>
+          <a href="https://wa.me/919209962961" target="_blank" rel="noopener noreferrer" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="https://github.com/kamleshbargal" target="_blank" rel="noopener noreferrer" title="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+        <p class="copyright">© 2026 Kamlesh Bargal. Built with HTML5, CSS3 &amp; JS.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <a href="#navbar" class="back-to-top" id="backToTop" aria-label="Back to top of page">
+    <i class="fa-solid fa-chevron-up"></i>
+  </a>
+
+  <!-- Main JavaScript File -->
+  <script src="js/main.js"></script>
+</body>
+</html>
