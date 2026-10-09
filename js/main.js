@@ -302,7 +302,7 @@ function initTerminal() {
       '  • Exploratory Data Analysis: Trend forecasting, anomaly detection, business insights'
     ],
     projects: () => [
-      '1. Atelier Online Clothes Shopping (HTML5, CSS3, JS, GCP Live Store)',
+      '1. Atelier Online Clothes Shopping [LIVE]: <a href="https://clothes-website-atelier.onrender.com/index.html" target="_blank" class="terminal-highlight">clothes-website-atelier.onrender.com</a>',
       '2. Hindavi Tours & Travels [LIVE]: <a href="https://hindavi-tours-travels.onrender.com/" target="_blank" class="terminal-highlight">hindavi-tours-travels.onrender.com</a>',
       '3. Sports Performance Analytics & Streamlit Dashboard (Python, Pandas)',
       '4. AI Conversational Chat Agent (Python, NLP, REST APIs)'
