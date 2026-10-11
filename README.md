@@ -1,8 +1,10 @@
 # 🚀 Kamlesh Bargal - Developer Portfolio
 
-A sleek, responsive, high-performance personal developer portfolio website designed for **Kamlesh Bargal** (Frontend Web Developer & Software Engineer).
+🌐 **Live Website:** [https://portfolio-qvhq.onrender.com](https://portfolio-qvhq.onrender.com)
 
-Built using modern web standards (**HTML5**, **CSS3**, **Vanilla JavaScript ES6+**), showcasing core proficiencies in **HTML, CSS, JavaScript, Python, Next.js, and Cloud Deployment (GCP)**.
+A sleek, responsive, high-performance personal developer portfolio website designed for **Kamlesh Bargal** (Frontend Web Developer & Data Analyst).
+
+Built using modern web standards (**HTML5**, **CSS3**, **Vanilla JavaScript ES6+**), showcasing core proficiencies in **HTML, CSS, JavaScript, Python, Next.js, Power BI, SQL, and Cloud Deployment (Render / GCP)**.
 
 ---
 
