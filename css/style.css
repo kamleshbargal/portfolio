@@ -854,6 +854,108 @@ a:hover {
   color: var(--text-secondary);
 }
 
+/* Hero Profile Photo Showcase */
+.hero-profile-bento {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.profile-card-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.85rem;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.profile-verified-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--accent-emerald-light);
+  background: rgba(16, 185, 129, 0.12);
+  border: 1px solid rgba(16, 185, 129, 0.25);
+  padding: 0.25rem 0.7rem;
+  border-radius: var(--radius-full);
+}
+
+.hero-photo-wrapper {
+  position: relative;
+  width: 230px;
+  height: 230px;
+  margin: 0.5rem auto 1.25rem auto;
+  border-radius: 24px;
+  padding: 4px;
+  background: linear-gradient(135deg, var(--accent-indigo) 0%, var(--accent-emerald) 100%);
+  box-shadow: 0 14px 35px -8px rgba(99, 102, 241, 0.4), 0 0 25px rgba(16, 185, 129, 0.25);
+}
+
+.hero-profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 20px;
+  display: block;
+  background-color: #f1f5f9;
+  transition: transform var(--transition-normal);
+}
+
+.hero-profile-bento:hover .hero-profile-image {
+  transform: scale(1.03);
+}
+
+.hero-profile-info {
+  margin-bottom: 0.75rem;
+}
+
+.hero-profile-name {
+  font-size: 1.45rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: 0.25rem;
+  letter-spacing: -0.02em;
+}
+
+.hero-profile-title {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--accent-indigo-light);
+  margin-bottom: 0.45rem;
+}
+
+.hero-profile-meta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+}
+
+.hero-profile-meta span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.hero-profile-bento .code-card-footer {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.hero-profile-bento .tech-pill-stack {
+  justify-content: center;
+}
+
 /* Floating Metric Badges */
 .floating-badge {
   position: absolute;
